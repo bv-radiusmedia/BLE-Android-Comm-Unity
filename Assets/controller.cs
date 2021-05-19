@@ -19,9 +19,9 @@ public class controller : MonoBehaviour
     // -----------------------------------------------------------------
     // change these to match the bluetooth device you're connecting to:
     // -----------------------------------------------------------------
-    private string _FullUID = "713d****-503e-4c75-ba94-3148f18d941e";
-    private string _serviceUUID = "0000";
-    private string _readCharacteristicUUID = "0002";
+    private string _FullUID = "0000****-0000-1000-8000-00805f9b34fb";
+    private string _serviceUUID = "1801";
+    private string _readCharacteristicUUID = "2a05";
     private string _writeCharacteristicUUID = "0003";
 
     // ---------------------------------------------------------------------
@@ -73,9 +73,9 @@ public class controller : MonoBehaviour
 
     private int devicesFound = 0;
 
-    private GameObject panelScan;
+    /*private GameObject panelScan;
     private GameObject panelConnected;
-    private GameObject panelSettings;
+    private GameObject panelSettings;*/
 
 
     void connectBluetooth(string addr)
@@ -280,23 +280,23 @@ public class controller : MonoBehaviour
 
     void showScan()
     {
-        panelSettings.SetActive(false);
+        /*panelSettings.SetActive(false);
         panelConnected.SetActive(false);
-        panelScan.SetActive(true);
+        panelScan.SetActive(true);*/
     }
 
     void showConnected()
     {
-        panelSettings.SetActive(false);
+        /*panelSettings.SetActive(false);
         panelScan.SetActive(false);
-        panelConnected.SetActive(true);
+        panelConnected.SetActive(true);*/
     }
 
     void showSettings()
     {
-        panelScan.SetActive(false);
+        /*panelScan.SetActive(false);
         panelConnected.SetActive(false);
-        panelSettings.SetActive(true);
+        panelSettings.SetActive(true);*/
     }
 
     void Initialise()
@@ -308,9 +308,9 @@ public class controller : MonoBehaviour
     void Start()
     {
 
-        panelScan = GameObject.Find("panelScan");
+        /*panelScan = GameObject.Find("panelScan");
         panelSettings = GameObject.Find("panelSettings");
-        panelConnected = GameObject.Find("panelConnected");
+        panelConnected = GameObject.Find("panelConnected");*/
 
         // set up the panels
         showScan();
